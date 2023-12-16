@@ -10,6 +10,7 @@ class WorkAssignmentServiceApp(
     fun startService() {
         val workDate = createWorkDate()
         val weekdayWorkers = createWeekdayWorker()
+        val holidayWorkers = createWeekdayWorker()
     }
 
     private fun createWorkDate(): WorkDate {
@@ -21,5 +22,9 @@ class WorkAssignmentServiceApp(
 
     private fun createWeekdayWorker(): List<Worker> {
         return inputView.readWeekdayWorkersName().map { Worker(it) }
+    }
+
+    private fun createHolidayWorker(): List<Worker> {
+        return inputView.readHolidayWorkersName().map { Worker(it) }
     }
 }
