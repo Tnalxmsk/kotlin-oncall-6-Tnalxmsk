@@ -1,5 +1,13 @@
 package oncall
 
+import oncall.model.WorkAssignmentServiceApp
+import oncall.view.InputView
+import oncall.view.OutputView
+
 fun main() {
-    TODO("프로그램 구현")
+    val inputView = InputView()
+    val outputView = OutputView()
+    val workAssignmentServiceApp = WorkAssignmentServiceApp(inputView, outputView)
+
+    workAssignmentServiceApp.startService()
 }
