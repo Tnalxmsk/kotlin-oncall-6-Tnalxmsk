@@ -20,6 +20,6 @@ class WorkAssignmentServiceApp(
     }
 
     private fun createWeekdayWorker(): List<Worker> {
-        return inputView.readWeekdayWorkerName().map { Worker(it) }
+        return inputView.readWeekdayWorkersName().map { Worker(it) }
     }
 }

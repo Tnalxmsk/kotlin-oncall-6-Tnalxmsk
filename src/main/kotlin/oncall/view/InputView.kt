@@ -10,7 +10,7 @@ class InputView {
         return input.split(SPLIT_DELIMITERS)
     }
 
-    fun readWeekdayWorkerName(): List<String> {
+    fun readWeekdayWorkersName(): List<String> {
         print(INPUT_WEEKDAY_WORKER_NAME_MESSAGE)
         val input = Console.readLine()
         return input.split(SPLIT_DELIMITERS)
