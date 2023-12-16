@@ -6,8 +6,8 @@ enum class MonthRole(val month: List<Int>, val days: Int) {
     TWENTY_EIGHTH(listOf(2), 28);
 
     companion object {
-        fun getDays(month: Int): MonthRole {
-            return MonthRole.entries.find { it.month.contains(month) }!!
+        fun getDays(month: Int): Int {
+            return MonthRole.entries.find { it.month.contains(month) }!!.days
         }
     }
 }
