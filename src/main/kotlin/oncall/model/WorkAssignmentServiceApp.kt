@@ -9,6 +9,7 @@ class WorkAssignmentServiceApp(
 ) {
     fun startService() {
         val workDate = createWorkDate()
+        val weekdayWorkers = createWeekdayWorker()
     }
 
     private fun createWorkDate(): WorkDate {
@@ -16,5 +17,9 @@ class WorkAssignmentServiceApp(
         val month = date[0].toInt()
         val dayOfWeek = date[1]
         return WorkDate(month, dayOfWeek)
+    }
+
+    private fun createWeekdayWorker(): List<Worker> {
+        return inputView.readWeekdayWorkerName().map { Worker(it) }
     }
 }
