@@ -53,6 +53,7 @@
 
 ### 근무표 생성기 - WorkScheduleGenerator
 - 근무표를 생성하는 기능
+- 생성한 근무표를 연속되지 않게 수정하는 기능
 ### 인덱스 검사자 - IndexChecker
 - 인덱스 범위를 벗어나는지 확인하는 함수
 ### 출력 - OutputView
