@@ -13,6 +13,7 @@ class WorkAssignmentServiceApp(
         val weekdayWorkers = createWeekdayWorker()
         val holidayWorkers = createHolidayWorker()
         val workSchedule = createAssignmentSchedule(workDate, weekdayWorkers, holidayWorkers)
+        outputView.printWorkSchedule(workSchedule)
     }
 
     private fun createWorkDate(): WorkDate {
