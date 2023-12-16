@@ -1,6 +1,8 @@
 package oncall.model
 
 import oncall.model.date.WorkDate
+import oncall.model.schedule.WorkSchedule
+import oncall.utils.WorkScheduleGenerator
 import oncall.view.InputView
 import oncall.view.OutputView
 

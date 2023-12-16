@@ -1,6 +1,6 @@
 package oncall.view
 
-import oncall.model.WorkSchedule
+import oncall.model.schedule.WorkSchedule
 
 class OutputView {
     fun printWorkSchedule(workSchedule: List<WorkSchedule>) {

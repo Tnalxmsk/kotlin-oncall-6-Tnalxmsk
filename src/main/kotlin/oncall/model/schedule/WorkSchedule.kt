@@ -1,4 +1,4 @@
-package oncall.model
+package oncall.model.schedule
 
 data class WorkSchedule(
     val month: Int,
