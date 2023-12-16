@@ -1,5 +1,6 @@
 package oncall.model
 
+import oncall.model.date.WorkDate
 import oncall.view.InputView
 import oncall.view.OutputView
 
